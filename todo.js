@@ -23,6 +23,7 @@ const constructToDo = () => {
 
 const newToDoItem = (task, index) => {
     const toDoItem = document.createElement('li');
+    toDoItem.className = 'listItem';
     toDoItem.innerText = task;
     toDoItem.onclick = removeFromList.bind(this, index);
     return toDoItem;

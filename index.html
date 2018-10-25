@@ -2,12 +2,16 @@
 <html>
     <head>
         <title>TO DO App</title>
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
-        <input id="newTask" type="text"/>
-        <button id="add" onclick="addToDo()">Add</button>
-        <ul id="toDoList">
-        </ul>
+        <main class="main">
+            <h1>TO DO App</h1>
+            <input id="newTask" class="newTaskInput" type="text"/>
+            <button id="add" class="btn" onclick="addToDo()">Add New Task</button>
+            <ul id="toDoList" class="list">
+            </ul>
+        </main>
         <script src="todo.js"></script>
     </body>
 </html>
